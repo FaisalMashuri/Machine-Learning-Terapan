@@ -82,20 +82,25 @@ Model – model yang saya pakai dalam projek ini adalah:
 
 ### SVM
 - Pipeline SVM
+
 ![pipeline SVM](https://github.com/FaisalMashuri/Machine-Learning-Terapan/blob/main/img/Screenshot%202022-03-07%20235735.jpg?raw=true)
 
 ### XGBoost
 - Pipeline XGBoost
+
 ![](https://github.com/FaisalMashuri/Machine-Learning-Terapan/blob/main/img/Screenshot%202022-03-07%20235826.jpg?raw=true)
 
 ## Evaluasi
 Berikut adalah tabel evaluasi dari kedua model:
+
 ![](https://github.com/FaisalMashuri/Machine-Learning-Terapan/blob/main/img/Screenshot%202022-03-08%20002532.jpg?raw=true)
 
 dan berikut adalah confusion matrix dari model SVM
+
 ![](https://github.com/FaisalMashuri/Machine-Learning-Terapan/blob/main/img/download%20(11).png?raw=true)
 
 Berikut confusion matrix dari model XGBoost
+
 ![](https://github.com/FaisalMashuri/Machine-Learning-Terapan/blob/main/img/download%20(12).png?raw=true)
 
 
