@@ -50,53 +50,70 @@ Variabel-variabel pada dataset adalah sebagai berikut:
 17. CNT_FAM_MEMBERS: Jumlah anggota keluarga.
 
 Statistik deskriptif data :
-![statistik deskriptif](./img/stats-deskripsi.png)
+![stats-deskripsi](https://user-images.githubusercontent.com/62064078/158396570-89ece62d-adba-43a7-946c-f28f84d4dc51.png)
+
 
 Kolom Numerik dan Categorical :
-![Kolom numeric dan kategorikal](./img/kolom-numerik-dan-categorical.jpg)
+![kolom-numerik-dan-categorical](https://user-images.githubusercontent.com/62064078/158396628-e7abf22d-1667-4d24-b17d-7da331a27fa0.jpg)
+
 
 Null values :
-![null values pada data](./img/null-value.png)
+![null-value](https://user-images.githubusercontent.com/62064078/158396680-ba3fee11-7adb-49ed-a448-48b0caf470e4.png)
+
 
 Outliers :
-![outliers](./img/outliers.png)
+![outliers](https://user-images.githubusercontent.com/62064078/158396708-6088be00-80dd-40d5-a477-d00cec6bba12.png)
+
 
 
 
 ### Visualisasi
 
 - Aplikasi yang dikirim berdasarkan gender <br />
-![output_1](./img/download1.png)
+![download1](https://user-images.githubusercontent.com/62064078/158396767-31df1982-3d39-4d15-abc2-e74bc400a8cf.png)
+
 
 - Aplikasi yang disetujui berdasarkan gender <br />
-![output_1](./img/download2.png)
+![download2](https://user-images.githubusercontent.com/62064078/158396785-bae828b1-0a1d-4cbd-a7d0-d743a92c15f9.png)
+
 
 - Aplikasi yang dikirim berdasarkan kepemilikan mobil <br />
-![output_1](./img/download3.png)
+![download3](https://user-images.githubusercontent.com/62064078/158396798-4ab7734a-a938-4f74-998d-0c6b221fd112.png)
+
 
 - Aplikasi yang dikirim berdasarkan kepemilikan porperti <br />
-![output_1](./img/download4.png)
+![download4](https://user-images.githubusercontent.com/62064078/158396806-9d984ae8-3788-4dec-aca4-661e140ea8c1.png)
+
 
 - Aplikasi yang dikirim berdasarkan jumlah anak <br />
-![output_1](./img/download5.png)
+![download5](https://user-images.githubusercontent.com/62064078/158396811-000aac31-9b61-437e-bd10-688b21582782.png)
+
+
 
 - Histogram total income  <br />
-![output_1](./img/download6.png)
+![download6](https://user-images.githubusercontent.com/62064078/158396835-423bcbb8-f96f-47ff-a3b5-203f2fc52cc2.png)
+
 
 - Aplikasi yang dikirim berdasarkan jenis income <br />
-![output_1](./img/download7.png)1 artinya punya and 0 berarti tidak
+![download7](https://user-images.githubusercontent.com/62064078/158396858-a2f9204f-8187-4826-99f4-93851052c082.png)
+
+1 artinya punya and 0 berarti tidak
 
 - Aplikasi yang dikirim berdasarkan status keluarga <br />
-![output_2](./img/download8.png)
+![download8](https://user-images.githubusercontent.com/62064078/158396911-375aff95-02e0-4838-846c-af981d8a5f6b.png)
+
 
 - Aplikasi yang dikirim berdasarkan tipe tempat tinggal <br />
-![output_2](./img/download9.png)
+![download9](https://user-images.githubusercontent.com/62064078/158396923-4ef67e2d-ec97-42f8-9a1e-6ba01ab61d61.png)
+
 
 - Aplikasi yang dikirim berdasarkan age <br />
-![output_2](./img/download10.png)
+![download10](https://user-images.githubusercontent.com/62064078/158396934-04890dbd-92e5-44f7-99a1-6a9d159655c4.png)
+
 
 - Heatmap correlation dari tiap atribut <br />
-![output_2](./img/download.png)
+![download](https://user-images.githubusercontent.com/62064078/158396952-81fab74d-e9ac-4e70-9eca-d9f0cc2520cf.png)
+
 
 
 ## Data Preparation
@@ -131,7 +148,8 @@ disini saya melakuakan merge data credit_record yang berisi riwayat pengajuan kr
 
 - Membuat Pipeline<br />
 Pada tahapan sebelumnya telah dipaparkan mengapa penting membagi data menjadi data training dan testing. Data testing haruslah data yang benar-benar belum pernah dilihat oleh model. Oleh karenanya pada tahap pre-processing seperti transformasi, penyekalaan harus dilakukan pada data testing saja. Jika penyelakaan atau transformasi dilakukan terhadap semua data dalam tanda kutip dilakukan sebelum pembagian data train dan testing akan menyebabkan kebocoran data yang dapat menyebabkan model menjadi overfit kedepannya. Kebocoran data adalah suatu momen ketika model sudah pernah melihat data testing. Bisa dianalogikan seperti seorang yang sedang berlatih untuk ujian dan mendapatkan bocoran mengenai ujian pertama, maka pada ujian pertama dia akan mendapatkan nilai yang baik namun jika ada ujian kedua belum tentu akan mendapat nilai yang baik. Oleh karenanya untuk mengukur seseorang menguasai materi dengan baik haruslah diuji dengan soal atau ujian yang belum pernah dikerjakan sebelumnya. Apa hubungannya dengan pipeline ? jika dalam preprocessing tersebut dilakukan secara manual akan banyak sekali tahapan dan variabel yang perlu diingat. Sebagai contoh misal dalam menangani data kosong dengan rata-rata, nilai rata-rata tersebut harus diingat ketika ingin menyekalakan data testing. Berikut ilustrasi dari pipeline dalam proyek ini. <br> <br>
-![pipeline-diagram](./img/pipeline-diagram.jpg)
+![pipeline-diagram](https://user-images.githubusercontent.com/62064078/158397264-e92b7fda-9d6d-4ac7-b809-1e2d8954651f.jpg)
+
 <br>
 <br>
 <br>
@@ -142,7 +160,8 @@ Model – model yang saya pakai dalam projek ini adalah:
 ### SVM
 Support Vector Machine (SVM) merupakan salah satu metode dalam supervised learning yang biasanya digunakan untuk regresi (Support Vector Regression).SVM digunakan untuk mencari hyperplane terbaik dengan memaksimalkan jarak antar kelas. Hyperplane adalah sebuah fungsi yang dapat digunakan untuk pemisah antar kelas. Dalam 2-D fungsi yang digunakan untuk klasifikasi antar kelas disebut sebagai line whereas, fungsi yang digunakan untuk klasifikasi antas kelas dalam 3-D disebut plane similarly, sedangan fungsi yang digunakan untuk klasifikasi di dalam ruang kelas dimensi yang lebih tinggi di sebut hyperplane.
 - Pipeline SVM <br>
-![pipeline SVM](./img/pipeline-svm.jpg)
+![pipeline-svm](https://user-images.githubusercontent.com/62064078/158397296-56f956bc-a91b-4247-8eac-76ebc1ac66f1.jpg)
+
 <br>
 Parameter yang digunakan pada model SVM antara lain : <br >
 disini saya menggunakan parameter default dari SVM untuk regresi dan hanya mengganti kernelnya menjadi linear.<br> <br> <br>
@@ -150,7 +169,8 @@ disini saya menggunakan parameter default dari SVM untuk regresi dan hanya mengg
 ### XGBoost
 XGBoost atau eXtreme Gradient Boosting adalah algoritma berbasis pohon. XGBoost adalah bagian dari keluarga pohon (Decision tree, Random Forest, bagging, boosting, gradient boosting). Kekuatan XGBoost adalah paralelisme dan pengoptimalan perangkat keras. Data disimpan dalam memori, disebut blok, dan disimpan dalam format kolom terkompresi [CSC]. Algoritma tersebut dapat melakukan pemangkasan pohon untuk menghilangkan cabang yang probabilitasnya rendah. Fungsi kerugian model memiliki istilah untuk menghukum kompleksitas model dengan regularisasi untuk memperlancar proses pembelajaran (mengurangi kemungkinan overfitting).
 - Pipeline XGBoost<br>
-![](./img/pipeline-xgb.jpg)
+![pipeline-xgb](https://user-images.githubusercontent.com/62064078/158397511-e7df4d1c-bb66-4439-9c85-b52ef25059ca.jpg)
+
 
 ## Evaluasi
 Metrik evaluasi adalah dasar yang digunakan untuk menentukan performa model dan model pemenang ditempatkan di papan peringkat.
@@ -169,15 +189,18 @@ Berikut adalah tabel evaluasi dari kedua model:
 
 - Metrik akurasi mengukur jumlah kelas yang diprediksi dengan benar oleh model - true positive dan true negative.
 
-    ![](./img/acc_formula.png)
+    ![acc_formula](https://user-images.githubusercontent.com/62064078/158397564-a983e3df-7a64-43f8-9a2b-67bc99d7bf24.png)
+
 
 - Mean Squared Error (MSE) adalah Rata-rata Kesalahan kuadrat diantara nilai aktual dan nilai peramalan. Metode Mean Squared Error secara umum digunakan untuk mengecek estimasi berapa nilai kesalahan pada peramalan. Nilai Mean Squared Error yang rendah atau nilai mean squared error mendekati nol menunjukkan bahwa hasil peramalan sesuai dengan data aktual dan bisa dijadikan untuk perhitungan peramalan di periode mendatang. Metode Mean Squared Error biasanya digunakan untuk mengevaluasi metode pengukuran dengan model regressi
 
-    ![](./img/rumus_MSE.jpg)
+    ![rumus_MSE](https://user-images.githubusercontent.com/62064078/158397598-748f1c31-6b49-4e34-811e-4836d761b8c0.jpg)
+
 
 <br>
 
-![](./img/acc.jpg)
+![acc](https://user-images.githubusercontent.com/62064078/158397643-ca245d39-ab91-4004-94b8-bc984331a73e.jpg)
+
 
 
 
@@ -185,11 +208,13 @@ Berikut adalah tabel evaluasi dari kedua model:
 
 dan berikut adalah confusion matrix dari model SVM
 
-![](./img/coff-matrix-svm.png)
+
+![coff-matrix-svm](https://user-images.githubusercontent.com/62064078/158397659-6899c64a-09c2-4e00-92d7-dc006ff239f6.png)
 
 Berikut confusion matrix dari model XGBoost
 
-![](./img/coff-matrix-xgb.png)
+![coff-matrix-xgb](https://user-images.githubusercontent.com/62064078/158397680-bfe7e3cf-a3f0-4e96-ba14-9a51b9caa618.png)
+
 
 
 
