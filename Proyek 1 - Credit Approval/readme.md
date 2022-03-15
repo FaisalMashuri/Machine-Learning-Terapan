@@ -33,19 +33,19 @@ Untuk data set saya menggunakan dataset dari kaggle yang dapat dilihat pada diba
 Variabel-variabel pada dataset adalah sebagai berikut:
 1. ID: id unik pada tiap baris
 2. CODE_GENDER: kode jenis kelamin. M adalah laki- laki dan F dan perempuan.
-3. FLAG_OWN_CAR: kolom yang menunjukan kepemilikan mobil. Y adalah Yes dan N adalah NO.
-4. FLAG_OWN_REALTY: kolom yang menunjukan realitas. Y adalah Yes dan N adalah No.
+3. FLAG_OWN_CAR: kolom yang menunjukan kepemilikan mobil. Y adalah punya dan N adalah tidak.
+4. FLAG_OWN_REALTY: kolom yang menunjukan properti. Y adalah iya dan N adalah tidak.
 5. CNT_CHILDREN: Jumlah anak.
-6. AMT_INCOME_TOTAL: Total income.
-7. NAME_INCOME_TYPE: jenis income.
+6. AMT_INCOME_TOTAL: Jumlah pemasukan.
+7. NAME_INCOME_TYPE: jenis pemasukan.
 8. NAME_EDUCATION_TYPE: jenis edukasi.
 9. NAME_FAMILY_STATUS: jenis status keluarga.
 10. DAYS_BIRTH: Hari lahir.
 11. DAYS_EMPLOYED: jumlah hari menjadi pegawai.
-12. FLAG_MOBILE: kolom yang menunjukan kepemilikan mobile phone. 1 is True and 0 is False.
-13. FLAG_WORK_PHONE: kolom yang menunjukan kepemilikan telpon kantor 1 is True and 0 is False.
-14. FLAG_PHONE: kolom yang menunjukan kepemilikan telpon rumah. 1 is True and 0 is False.
-15. FLAG_EMAIL: kolom yang menunjukan kepemilikan email. 1 is True and 0 is False.
+12. FLAG_MOBILE: kolom yang menunjukan kepemilikan mobile phone. 1 artinya punya and 0 berarti tidak.
+13. FLAG_WORK_PHONE: kolom yang menunjukan kepemilikan telpon kantor1 artinya punya and 0 berarti tidak.
+14. FLAG_PHONE: kolom yang menunjukan kepemilikan telpon rumah. 1 artinya punya and 0 berarti tidak.
+15. FLAG_EMAIL: kolom yang menunjukan kepemilikan email. 1 artinya punya and 0 berarti tidak.
 16. OCCUPATION_TYPE: jenis pekerjaan. 
 17. CNT_FAM_MEMBERS: Jumlah anggota keluarga.
 
@@ -84,7 +84,7 @@ Outliers :
 ![output_1](./img/download6.png)
 
 - Aplikasi yang dikirim berdasarkan jenis income <br />
-![output_1](./img/download7.png)
+![output_1](./img/download7.png)1 artinya punya and 0 berarti tidak
 
 - Aplikasi yang dikirim berdasarkan status keluarga <br />
 ![output_2](./img/download8.png)
@@ -98,7 +98,17 @@ Outliers :
 - Heatmap correlation dari tiap atribut <br />
 ![output_2](./img/download.png)
 
+
 ## Data Preparation
+
+- Data Cleaning <br />
+Data Cleaning adalah proses pembersihan data. Pada step kali ini kita akan membersihkan fitur yang tidak terlalu berpengaruh terhadap sebuah keputusan diterimanya sebuah pengajuan kredit. Disini kita akan menghapus beberapa fitur karena tidak berpengaruh terhadap persetujuan pengajuan kredit seperti :
+    - Occupation Type : jenis pekerjaan
+    - FLAG_MOBILE : kepemilikan telpon seluler
+    - FLAG_WORK_PHONE: kepemilikan telpon kantor
+    - FLAG_PHONE : kepemilikan telpon rumah
+    - FLAG_EMAIL : kepemilikan email
+
 
 - Mengatasi pencilan atau outlier<br /> 
 Pada tahapan ini berguna untuk menghapus data tidak normal pada dataset dengan menggunakan teknik IQR method. IQR merupakan interquartile yang dapat diformulasikan Q3 - Q1. 
@@ -125,7 +135,8 @@ Pada tahapan sebelumnya telah dipaparkan mengapa penting membagi data menjadi da
 <br>
 <br>
 <br>
-## Modeling
+
+## Modeling<br />
 Model – model yang saya pakai dalam projek ini adalah:
 
 ### SVM
